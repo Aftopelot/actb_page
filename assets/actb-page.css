@@ -1,0 +1,56 @@
+﻿.actb-page {
+  background: #fafafd;
+}
+.actb-page #primary.content-area { width: 70%; }
+.actb-page #sidebar-primary.sidebar { width: 30%; }
+.actb-content { color: #212529; padding: 60px 0 80px; }
+.actb-content p, .actb-content li { color: #212529; font-size: 18px; line-height: 1.75; }
+.actb-content p { margin: 0 0 18px; }
+.actb-content ul { margin: 0; padding-left: 27px; }
+.actb-breadcrumbs { margin-bottom: 28px; font-size: 18px; line-height: 31.5px; }
+.actb-breadcrumbs .trail-item { display: inline-block; }
+.actb-breadcrumbs .trail-item a { color: #212529; }
+.actb-breadcrumbs .trail-item a:hover, .actb-breadcrumbs .trail-item a:focus { color: #5066ba; }
+.actb-breadcrumbs .trail-item + .trail-item:before { color: #212529; content: "\f105"; font-family: "Font Awesome 5 Free"; font-size: 13px; font-weight: 900; margin: 0 10px 0 8px; }
+.actb-eyebrow { font-size: 18px; line-height: 31.5px; margin-bottom: 15px; }
+.actb-title { color: #212529; font-size: 33px; font-weight: 500; line-height: 1.5; margin: 0 0 30px; }
+.actb-section { padding: 25px 0; }
+.actb-section-title { color: #212529; font-size: 22px; font-weight: 500; line-height: 33px; margin: 0 0 15px; }
+.actb-carousel { padding: 30px 0; }
+.actb-carousel-stage { aspect-ratio: 1570 / 1080; background: transparent; overflow: hidden; width: 100%; }
+.actb-carousel-stage img { display: block; height: 100%; object-fit: cover; width: 100%; }
+.actb-carousel-thumbs { display: flex; gap: 15px; margin-top: 30px; }
+.actb-carousel-thumb { background: transparent; border: 0; cursor: pointer; flex: 1 1 0; padding: 5px 0 0; }
+.actb-carousel-thumb-image { aspect-ratio: 157 / 108; overflow: hidden; width: 100%; }
+.actb-carousel-thumb-image img { display: block; height: 100%; object-fit: cover; transition: transform 0.3s ease, opacity 0.3s ease; width: 100%; }
+.actb-carousel-thumb-marker { background: #00aedc; height: 5px; margin-top: 5px; opacity: 0; transition: opacity 0.3s ease, background-color 0.3s ease; width: 100%; }
+.actb-carousel-thumb.is-active .actb-carousel-thumb-marker { background: #5066ba; opacity: 1; }
+.actb-carousel-thumb:hover .actb-carousel-thumb-image img, .actb-carousel-thumb:focus .actb-carousel-thumb-image img { opacity: 0.9; transform: scale(1.02); }
+.actb-demo-actions { display: flex; justify-content: center; margin-top: 15px; }
+.actb-demo-button { background: #00aedc; border: 1px solid #00aedc; border-radius: 4.8px; color: #fff; display: inline-block; font-size: 20px; line-height: 30px; padding: 9px 17px; text-decoration: underline; transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease; }
+.actb-demo-button:hover, .actb-demo-button:focus { background: #0b60a9; border-color: #0b60a9; box-shadow: 0 2px 7px rgba(162,160,160,0.54); color: #fff; }
+.actb-pdf-grid { display: flex; gap: 15px; }
+.actb-pdf-button { align-items: center; color: inherit; display: flex; flex: 1 1 0; min-width: 0; text-decoration: none; }
+.actb-pdf-icon { align-items: center; display: flex; flex: 0 0 38px; height: 38px; justify-content: center; }
+.actb-pdf-icon svg { display: block; height: 30px; width: 30px; }
+.actb-pdf-meta { min-width: 0; overflow: hidden; padding: 0 8px; }
+.actb-pdf-title { color: #323232; font-size: 14px; line-height: 21px; margin: 0 0 4px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.actb-pdf-size { color: #8e989b; font-family: Arial, sans-serif; font-size: 11px; line-height: 1; }
+.actb-pdf-button:hover .actb-pdf-title, .actb-pdf-button:focus .actb-pdf-title { color: #00aedc; }
+.actb-page .sidebar-widget-wrapper { padding-top: 15px; }
+.actb-page .widget-categories ul li { position: relative; }
+.actb-page .widget-categories ul li.actb-current:after { color: #212529; content: "\f105"; font-family: "Font Awesome 5 Free"; font-size: 13px; font-weight: 900; position: absolute; right: 0; top: 6px; }
+@media screen and (max-width: 991px) {
+  .actb-page #primary.content-area, .actb-page #sidebar-primary.sidebar { width: 100%; }
+  .actb-carousel-thumbs, .actb-pdf-grid { flex-wrap: wrap; }
+  .actb-carousel-thumb { flex: 1 1 calc(25% - 12px); }
+  .actb-pdf-button { flex: 1 1 100%; }
+}
+@media screen and (max-width: 767px) {
+  .actb-content { padding: 35px 0 55px; }
+  .actb-title { font-size: 28px; line-height: 1.35; }
+  .actb-carousel-thumb { flex: 1 1 calc(50% - 8px); }
+  .actb-breadcrumbs { font-size: 16px; }
+}
+
+
