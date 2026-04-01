@@ -29,13 +29,13 @@
 .actb-demo-actions { display: flex; justify-content: center; margin-top: 15px; }
 .actb-demo-button { background: #00aedc; border: 1px solid #00aedc; border-radius: 4.8px; color: #fff; display: inline-block; font-size: 20px; line-height: 30px; padding: 9px 17px; text-decoration: underline; transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease; }
 .actb-demo-button:hover, .actb-demo-button:focus { background: #0b60a9; border-color: #0b60a9; box-shadow: 0 2px 7px rgba(162,160,160,0.54); color: #fff; }
-.actb-pdf-grid { display: flex; gap: 15px; }
-.actb-pdf-button { align-items: center; color: inherit; display: flex; flex: 1 1 0; min-width: 0; text-decoration: none; }
-.actb-pdf-icon { align-items: center; display: flex; flex: 0 0 38px; height: 38px; justify-content: center; }
+.actb-pdf-grid { display: flex; gap: 15px; padding-top: 24px; }
+.actb-pdf-button { align-items: flex-start; color: inherit; display: flex; flex: 1 1 0; gap: 8px; min-width: 0; text-decoration: none; }
+.actb-pdf-icon { align-items: center; display: flex; flex: 0 0 38px; height: 38px; justify-content: center; margin-top: 2px; }
 .actb-pdf-icon svg { display: block; height: 30px; width: 30px; }
-.actb-pdf-meta { min-width: 0; overflow: hidden; padding: 0 8px; }
-.actb-pdf-title { color: #323232; font-size: 14px; line-height: 21px; margin: 0 0 4px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.actb-pdf-size { color: #8e989b; font-family: Arial, sans-serif; font-size: 11px; line-height: 1; }
+.actb-pdf-meta { display: flex; flex: 1 1 auto; flex-direction: column; min-width: 0; overflow: visible; padding: 0; }
+.actb-pdf-title { color: #323232; display: block; font-size: 14px; line-height: 1.35; margin: 0 0 4px; overflow-wrap: normal; white-space: normal; word-break: normal; }
+.actb-pdf-size { color: #8e989b; display: block; font-family: Arial, sans-serif; font-size: 11px; line-height: 1; white-space: nowrap; }
 .actb-pdf-button:hover .actb-pdf-title, .actb-pdf-button:focus .actb-pdf-title { color: #00aedc; }
 .actb-page .sidebar-widget-wrapper { padding-top: 15px; }
 .actb-page .widget-categories ul li { position: relative; }
@@ -52,5 +52,11 @@
   .actb-carousel-thumb { flex: 1 1 calc(50% - 8px); }
   .actb-breadcrumbs { font-size: 16px; }
 }
+
+
+
+
+
+
 
 
